@@ -96,7 +96,7 @@ class LWPCookieJar(FileCookieJar):
             if self.filename is not None: filename = self.filename
             else: raise ValueError(MISSING_FILENAME_TEXT)
 
-        f = open(filename, "w")
+        f = open(filename, "wb")
         try:
             debug("Saving LWP cookies file")
             # There really isn't an LWP Cookies 2.0 format, but this indicates
